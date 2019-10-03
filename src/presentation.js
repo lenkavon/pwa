@@ -53,14 +53,12 @@ import iosInstallation from './assets/ios-installation.gif';
 import pwaLogo from './assets/pwa-logo.png';
 import appShell from './assets/app-shell.jpg';
 
-import netRace from './assets/cache-and-network-race.png'
-import cacheFirst from './assets/cache-then-network.png'
-import fallbackNetwork from './assets/falling-back-to-network.png'
-import genericFallback from './assets/generic-fallback.png'
-import netFirst from './assets/network-falling-back-to-cache.png'
-import netOnly from './assets/network-only.png'
-
-
+import netRace from './assets/cache-and-network-race.png';
+import cacheFirst from './assets/cache-then-network.png';
+import fallbackNetwork from './assets/falling-back-to-network.png';
+import genericFallback from './assets/generic-fallback.png';
+import netFirst from './assets/network-falling-back-to-cache.png';
+import netOnly from './assets/network-only.png';
 
 require('normalize.css');
 require('./override.css');
@@ -108,19 +106,23 @@ export default class Presentation extends React.Component {
         <SlideSet>
           <Slide>
             <Heading size={4}>What is PWA?</Heading>
-            <Text>
-              Google defines PWA as web applications that are
-            </Text>
+            <Text>Google defines PWA as web applications that are</Text>
             <List>
               <Appear>
-                <ListItem>Reliable (Load instantly even in uncertain network conditions)</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Fast(Respond quickly to user interactions with smooth animations)</ListItem>
+                <ListItem>
+                  Reliable (Load instantly even in uncertain network conditions)
+                </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Engaging(Feel like a natural app on the device, with an immersive UX) 
+                  Fast(Respond quickly to user interactions with smooth
+                  animations)
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>
+                  Engaging(Feel like a natural app on the device, with an
+                  immersive UX)
                 </ListItem>
               </Appear>
             </List>
@@ -128,20 +130,18 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Heading size={4}>What is PWA?</Heading>
-            <Text>
-              It is possible to 
-            </Text>
+            <Text>It is possible to</Text>
             <List>
               <Appear>
-                <ListItem>Install on home screen and use in full screen without store</ListItem>
+                <ListItem>
+                  Install on home screen and use in full screen without store
+                </ListItem>
               </Appear>
               <Appear>
                 <ListItem>Send push notifications</ListItem>
               </Appear>
               <Appear>
-                <ListItem>
-                  Work offline 
-                </ListItem>
+                <ListItem>Work offline</ListItem>
               </Appear>
             </List>
           </Slide>
@@ -188,12 +188,12 @@ export default class Presentation extends React.Component {
                 <ListItem>Achive mobile app like functionality</ListItem>
               </Appear>
               <Appear>
-                <ListItem>Easy migration of existing mobile first apps</ListItem>
+                <ListItem>
+                  Easy migration of existing mobile first apps
+                </ListItem>
               </Appear>
               <Appear>
-                <ListItem>
-                  Avoid cross-platform mobile development 
-                </ListItem>
+                <ListItem>Avoid cross-platform mobile development</ListItem>
               </Appear>
               <Appear>
                 <ListItem>Native apps deployed to an App Store</ListItem>
@@ -249,23 +249,24 @@ export default class Presentation extends React.Component {
               </Appear>
             </List>
           </Slide>
-        </SlideSet>      
+        </SlideSet>
 
         <SlideSet>
           <Slide transition={['fade']} bgColor="primary" textColor="secondary">
             <Heading size={3}>How?</Heading>
             <List>
               <ListItem>A supported browser</ListItem>
-              <ListItem>HTTPS{' '}
+              <ListItem>
+                HTTPS{' '}
                 <Appear>
                   <span> (unless on localhost)</span>
                 </Appear>
               </ListItem>
               <Appear>
-              <ListItem>Manifest</ListItem>
+                <ListItem>Manifest</ListItem>
               </Appear>
               <Appear>
-              <ListItem>ServiceWorker</ListItem>
+                <ListItem>ServiceWorker</ListItem>
               </Appear>
             </List>
           </Slide>
@@ -568,7 +569,6 @@ export default class Presentation extends React.Component {
           <Image src={newVersionAvailableFullscreen} />
         </Slide>
 
-
         <Slide transition={['fade']}>
           <Image src={updatingServiceWorker} />
           <Link href="https://deanhume.com/displaying-a-new-version-available-progressive-web-app/">
@@ -631,13 +631,13 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['none']} bgColor="primary" textColor="secondary">
           <Heading size={4} margin="20px 0">
-           Falling Back to network
+            Falling Back to network
           </Heading>
           <Image src={fallbackNetwork} />
         </Slide>
         <Slide transition={['none']} bgColor="primary" textColor="secondary">
           <Heading size={4} margin="20px 0">
-           Generic Fallback
+            Generic Fallback
           </Heading>
           <Image src={genericFallback} />
         </Slide>
@@ -663,13 +663,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']}>
-            <Heading size={3}>Testing and tooling</Heading>
-            <List>
-              {this.renderListItem('Automated testing tools same as non-PWA')}
-              {this.renderListItem('Lighthouse')}
-              {this.renderListItem('Chrome DevTools')}
-            </List>
-          </Slide>
+          <Heading size={3}>Testing and tooling</Heading>
+          <List>
+            {this.renderListItem('Automated testing tools same as non-PWA')}
+            {this.renderListItem('Lighthouse')}
+            {this.renderListItem('Chrome DevTools')}
+          </List>
+        </Slide>
 
         <Slide transition={['fade']}>
           <Heading size={3}>Lighthouse</Heading>
@@ -689,7 +689,7 @@ export default class Presentation extends React.Component {
           <Heading size={4}>PWA audit results</Heading>
           <Image src={lighthouseResults} />
         </Slide>
-        
+
         <Slide transition={['fade']}>
           <Heading size={4}>LightHouse (Demo #2)</Heading>
         </Slide>
