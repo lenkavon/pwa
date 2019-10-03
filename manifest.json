@@ -1,0 +1,32 @@
+{
+  "short_name": "PWA",
+  "name": "PWA in Practice",
+  "description": "Presentation about Progressive Web Applications",
+  "icons": [
+    {
+      "src": "icons/android/android-launchericon-512-512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icons/android/android-launchericon-144-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icons/android/android-launchericon-96-96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/android/android-launchericon-72-72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "icons/android/android-launchericon-48-48.png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000",
+  "background_color": "#03A9FC",
+  "orientation": "landscape-primary"
+}
